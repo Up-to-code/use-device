@@ -1,0 +1,65 @@
+{
+  "name": "@up-to-code/use-device",
+  "version": "0.1.0",
+  "description": "A reactive Expo hook for window, platform, locale, direction, and color-scheme information.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "expo-localization": ">=57.0.0 <58.0.0",
+    "react": ">=19.0.0",
+    "react-native": ">=0.86.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "expo-localization": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "tsup": "^8.5.0",
+    "typescript": "~6.0.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Up-to-code/use-device.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Up-to-code/use-device/issues"
+  },
+  "homepage": "https://github.com/Up-to-code/use-device#readme",
+  "keywords": [
+    "expo",
+    "react-native",
+    "hook",
+    "device",
+    "localization",
+    "theme"
+  ]
+}
