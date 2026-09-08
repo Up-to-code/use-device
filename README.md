@@ -1,4 +1,4 @@
-# @up-to-code/use-device
+# @kyna-code/use-device
 
 A small, reactive Expo hook for the environment facts most applications need:
 window size, pixel and font scale, orientation, platform, color scheme, preferred
@@ -9,14 +9,14 @@ The package targets Expo SDK 57 and has no provider requirement.
 ## Install
 
 ```sh
-npx expo install @up-to-code/use-device expo-localization
+npx expo install @kyna-code/use-device expo-localization
 ```
 
 ## Use
 
 ```tsx
 import { Text, View } from 'react-native';
-import { useDevice } from '@up-to-code/use-device';
+import { useDevice } from '@kyna-code/use-device';
 
 export function EnvironmentSummary() {
   const device = useDevice();

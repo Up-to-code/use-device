@@ -1,5 +1,5 @@
 {
-  "name": "@up-to-code/use-device",
+  "name": "@kyna-code/use-device",
   "version": "0.1.0",
   "description": "A reactive Expo hook for window, platform, locale, direction, and color-scheme information.",
   "license": "MIT",
